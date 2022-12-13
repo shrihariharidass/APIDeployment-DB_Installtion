@@ -1,0 +1,49 @@
+How We Deploy Python WebSocket & Rest api on Server (Existing API)
+
+1. Firstly Clone the Gangupp repository which is backend code
+	#git clone repository-name
+	
+2. Intsall Python3 or latest python version on server
+	#sudo apt update
+	#sudo apt install python3 or sudo apt install python3.8
+	#python --version
+
+3. Install PIP3 or latest version
+	#sudo apt-get update
+	#sudo apt-get -y install python3-pip
+	#pip3 --version
+
+4. then we create python env for deploy api for that firt go to folder which you clone
+	#pip3 install virtualenv
+    #virtualenv mypython (mypython is name you give according to your need)
+	or
+	#virtualenv venv --python=python3.9 (venv is name)
+    
+
+5. Start Virtual Env or Active 
+	#source mypython/bin/activate
+	or
+	#source venv/bin/activate
+	
+6. then install requirments file in your python code in that code its mention dependencies
+	#pip install -r requirements.txt
+	
+7. then run your server or deploy api (open port publicaly i.e. 8000)
+	#python3 ./manage.py runserver 0.0.0.0:8000
+	#if any error come like djano not install then install djano
+	
+8. After that you run agin api its deploy sucessfully & hit your public ip with port number
+
+9. then  go to tambola ticket folder and run following command
+	#pm2 start -f index.js
+	
+10. For access djanjo admin pannel on 56 server credentials are
+	#username= gangupp
+	#password= devserver@123
+	
+11. Url for Gangupp Python & reactjs
+	#Gangupp_backend=https://github.com/GangUPP/gangupp_backend.git
+	#token=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
+	
+	#Gangupp_Admin=https://github.com/GangUPP/gangupp-admin-panel.git
+	#token=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
