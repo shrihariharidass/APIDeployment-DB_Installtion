@@ -47,3 +47,5 @@ WantedBy=multi-user.target
 sudo systemctl daemon-reload
 sudo systemctl start tomcat
 sudo systemctl status tomcat
+Create a Deployer role
+Deploy war file in tomcat
