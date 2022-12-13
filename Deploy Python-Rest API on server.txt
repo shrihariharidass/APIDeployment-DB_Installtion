@@ -1,6 +1,6 @@
 How We Deploy Python WebSocket & Rest api on Server (Existing API)
 
-1. Firstly Clone the Gangupp repository which is backend code
+1. Firstly Clone the repository which is backend code
 	#git clone repository-name
 	
 2. Intsall Python3 or latest python version on server
@@ -33,17 +33,3 @@ How We Deploy Python WebSocket & Rest api on Server (Existing API)
 	#if any error come like djano not install then install djano
 	
 8. After that you run agin api its deploy sucessfully & hit your public ip with port number
-
-9. then  go to tambola ticket folder and run following command
-	#pm2 start -f index.js
-	
-10. For access djanjo admin pannel on 56 server credentials are
-	#username= gangupp
-	#password= devserver@123
-	
-11. Url for Gangupp Python & reactjs
-	#Gangupp_backend=https://github.com/GangUPP/gangupp_backend.git
-	#token=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
-	
-	#Gangupp_Admin=https://github.com/GangUPP/gangupp-admin-panel.git
-	#token=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
