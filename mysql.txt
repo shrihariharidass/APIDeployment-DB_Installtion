@@ -1,0 +1,52 @@
+*How to Install MySQL on ubuntu
+
+1. Install Command
+	#sudo apt update
+	#sudo apt install mysql-server
+	#sudo systemctl start mysql.service
+	
+2. Configuring MySQL
+
+	#sudo mysql
+	#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+	#exit
+	
+3. Login For mysql
+
+	#mysql -u root -p
+	or
+	#mysql
+	
+4. Creating Database And user
+
+	#CREATE DATABASE mmadvisory_demo;
+	#create user 'mmadvisory_demo' identified by 'i2i@i4C#';
+	
+5. To see database, tables and to connect database
+
+	#mysql
+		#show databases; =>to show all databases
+		#use database_name => to connect with particular database
+		#show tables; => to show tables in database
+		#select * from table_name; => to see data in particular tables
+		#\q or q => for exit from database
+
+6. If we want to restore dump of database 
+
+	#mysql -u [user] -p [database_name] < [filename].sql 
+	ex: mysql -u mmadvisory_demo -p mmadvisory_demo < dump.sql => dump.sql is your db dumpname
+	
+7. If you want directly connect to database
+
+	#mysql -h {hostname} -u username -p {databasename}
+	ex: mysql -h localhost -u mmadvisory_demo -p mmadvisory_demo
+	
+8. To give grant privellages to database
+
+	#grant all privileges on database quizdb to quiz;
+	#grant ALL PRIVILEGES ON ALL TABLES IN SCHEMA public to quiz;
+	#grant ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public to quiz;
+	
+9. to drop database
+
+	#DROP DATABASE databasename
